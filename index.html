@@ -3,10 +3,32 @@
     
 <head>
     <tilte>Mi tutorial</tilte>
+    <style>
+        body {background-color: antiquewhite; font-family: arial}
+        h1#yo {color: darkolivegreen;border: 1px solid green}
+        p {color:dimgray}
+        p.special{color:black}
+        a:link    {color:green; background-color:transparent; text-decoration:none}
+        a:visited {color:pink; background-color:transparent; text-decoration:none}
+        a:hover   {color:#b100ff; background-color:transparent; text-decoration:underline}
+        a:active  {color:yellow; background-color:transparent; text-decoration:underline}
+        
+        ul#clases{padding: 0px}
+        ul#clases li {
+            display: inline;
+            background-color: green;
+            color: aliceblue;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px 4px 0 0;
+        }
+
+        
+    </style>
 </head>
 <body>
 
-<h1 style="text-align:center">Tutorial html5</h1>
+<h1 style="text-align:center" id="yo">Tutorial html5</h1>
 
 <p style="color:#54b154; text-align:center">Archivo de prueba para diferentes tutoriales. Incluyendo git.</p>
 
@@ -54,10 +76,47 @@ At W3Schools we always quote attributes with double quotes <br>
     
     <p><bdo dir="rtl">Espero no tener que usar esto jamas</bdo></p>
     
+    <hr>
+    <!-- Hr suele significar el comienzo de un nuevo tutorial -->
     <code>
         var holi = new Saludo();
     </code>
     
+    <hr>
+    
+    <p class="special">CSS:<br>
+    padding: inside border<br>
+    margin: outside border <br>
+        <br>
+        INFO:<br>
+        Use the HTML style attribute for inline styling<br>
+Use the HTML <!style> element to define internal CSS<br>
+Use the HTML <!link> element to refer to an external CSS file<br>
+Use the HTML <!head> element to store <!style> and <!link> elements<br>
+Use the CSS color property for text colors<br>
+Use the CSS font-family property for text fonts<br>
+Use the CSS font-size property for text sizes<br>
+Use the CSS border property for visible element borders<br>
+Use the CSS padding property for space inside the border<br>
+Use the CSS margin property for space outside the border<br>
+    </p>
+
+    <hr>
+    
+    <a href="#yo">Back to top</a>
+    
+    <hr>
+    
+    <div style="background-color:aliceblue">
+    <ul id="clases">
+        <li>Desarrollo</li>
+        <li>Sistrans</li>
+        <li>Proba</li>
+        
+        &reg;
+    
+    </ul>
+    </div>
 
 </body>
 </html>
